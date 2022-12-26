@@ -90,14 +90,14 @@ public class EditActivity extends AppCompatActivity {
         iv_close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
+                startActivity(new Intent(EditActivity.this, MainActivity.class));
             }
         });
 
         iv_check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
+                startActivity(new Intent(EditActivity.this, MainActivity.class));
             }
         });
 

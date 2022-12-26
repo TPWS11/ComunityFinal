@@ -68,5 +68,14 @@ public class MainActivity extends AppCompatActivity {
         ;
     }
 
-
+    @SuppressLint("ResourceType")
+    @Override
+    public void onBackPressed() {
+        if (bnv.getId() == 2) {
+            super.onBackPressed();
+            finish();
+        } else {
+            bnv.show(2,true);
+        }
+    }
 }
