@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        app:cardCornerRadius="15dp"
+        android:background="@color/white"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_upload"
+            android:background="@color/black"
+            app:tabSelectedTextColor="#ffa500"
+            app:tabTextColor="@color/white"
+            app:tabIndicatorColor="@color/gold"
+            app:tabRippleColor="@null"
+            />
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/vp_upload" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
